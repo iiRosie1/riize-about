@@ -1,9 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Sedgwick+Ave&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+
     <meta charset="UTF-8">
     <title>RIIZE</title>
     <style>
+      body {
+        background-color: #3F3C3A;
+      }
       .header {
         display: flex;
         align-items: center;
@@ -15,16 +28,49 @@
       .riize-logo {
         max-width: 300px;
       }
+      
+      .navbar {
+        background-color: #292929;
+        text-align: center;
+        padding: 5px 0;
+        font-family: "Sedgwick Ave", cursive;
+      }
+
+      .navbar a {
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+        margin: 0 50px;
+        padding: 0px 25px;
+      }
+
+      .navbar a:hover {
+        background-color: #3f3f3f;
+        color: #9c9c9c;
+      }
+      
+      .riize-group-photo {
+        display: block; 
+        margin: 0 auto; 
+        width: 850px; 
+        padding: 20px;
+      }
 
       .footer {
         background-color: #3F3C3A;
         text-align: center;
         padding: 10px;
         color: white;
+        font-family: "Sora";
+        font-size: 14;
       }
 
       .email {
         color: #a3a3a3;
+      }
+      .email:hover {
+        color: white;
       }
     </style>
   </head>
@@ -32,8 +78,18 @@
     <div class="header">
       <img src="RIIZE-rise-and-realize-transparent.png" alt="RIIZE Logo" class="riize-logo">
     </div>
+    
+    <div class="navbar">
+      <a href="about.html" class="active">About</a>
+      <a href="discography.html">Discography</a>
+      <a href="members.html">Members</a>
+      <a href="socials.html">Socials</a>
+    </div>
 
-    <h1>Welcome to My Website</h1>
+    <div class="group-photo">
+      <img src="riizephoto2.png" alt="RIIZE photo" class="riize-group-photo">
+    </div>
+    
     <div class="footer">
       <p>
         website designed by <a class="email" href="mailto:r385chen@uwaterloo.ca">Rose Chen</a>
