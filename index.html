@@ -50,16 +50,25 @@
         color: #9c9c9c;
       }
       
-      .riize-group-photo {
+      .group-photo {
         position: relative;
+        text-align: center; 
+      }
+
+      .riize-group-photo {
+        display: inline-block;
+        max-width: 100%;
+        height: auto;
       }
 
       .caption {
         font-family: "Sora";
         color: white;
         position: absolute;
-        bottom: -30px;
-        left: 16px;
+        bottom: 30px;
+        left: 50%; 
+        transform: translateX(-50%);
+        text-align: center;
       }
       
       .group {
@@ -95,6 +104,7 @@
         display: block;
         margin: 0 auto;
         max-width: 100%;
+        padding-top: 50px;
       }
       
       .column p {
@@ -102,6 +112,7 @@
         margin-top: 10px;
         font-family: "Sora";
         font-size: 14px; 
+        padding: 50px;
       }
 
       .row:after {
