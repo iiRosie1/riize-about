@@ -51,10 +51,63 @@
       }
       
       .riize-group-photo {
-        display: block; 
-        margin: 0 auto; 
-        width: 850px; 
-        padding: 20px;
+        position: relative;
+      }
+
+      .caption {
+        font-family: "Sora";
+        color: white;
+        position: absolute;
+        bottom: -30px;
+        left: 16px;
+      }
+      
+      .group {
+        background-color: #111111; 
+        color: white; 
+        text-align: center; 
+        font-family: "Sora"; 
+        padding: 150px 0;
+        width: 100%; 
+      }
+
+      .group h4 {
+        font-size: 18px;
+        margin-bottom: 20px; 
+      }
+
+      .group p {
+        font-size: 14px; /* Font size for the paragraph */
+        max-width: 800px; /* Limit the paragraph width for better readability */
+        margin: 0 auto; /* Center the paragraph */
+      }
+      
+      .column {
+        background-color: #d6d6d6;
+        float: left;
+        width: 50%;
+        text-align: center; /* Centers the text and image horizontally */
+        padding: 20px; /* Adds padding for spacing */
+        box-sizing: border-box;
+      }
+      
+      .column img {
+        display: block;
+        margin: 0 auto; /* Centers the image horizontally */
+        max-width: 100%; /* Ensures the image doesn't overflow its container */
+      }
+      
+      .column p {
+        text-align: center; /* Centers the paragraph text */
+        margin-top: 10px; /* Adds spacing between the image and text */
+        font-family: "Sora"; /* Optional: Ensures font consistency */
+        font-size: 14px; /* Optional: Sets the font size for the text */
+      }
+
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
       }
 
       .footer {
@@ -88,11 +141,40 @@
 
     <div class="group-photo">
       <img src="riizephoto2.png" alt="RIIZE photo" class="riize-group-photo">
+      <div>
+        <p class="caption">
+          Members from Left to Right, Top to Bottom: Sungchan, Sohee, Wonbin, Shotaro, Eunseok, Seunghan, Anton
+        </p>
+      </div>
+    </div>
+    
+    <div class="group">
+      <h4>
+        RISE &amp REALIZE
+      </h4>
+      <p>
+        RIIZE (pronounced as "Rise") is a South Korean boy band formed by SM Entertainment. They debuted on September 4, 2023, with the single album Get a Guitar.
+      </p>
+    </div>
+    
+    <div class="column">
+      <img src="riize.png" alt="RIIZE logo">
+      <p>
+        The group's name, RIIZE, is a name created by combining "Rise", which means "growth", and "Realize", which means "a team that grows together and realizes dreams”.
+      </p>
+    </div>
+    
+    <div class="column">
+      <img src="briize.png" alt="BRIIZE logo">
+      <p>
+        The fanclub’s name, BRIIZE means that, like a breeze blowing everywhere, we will help RIIZE soar and be with RIIZE anytime, anywhere.
+      </p>
     </div>
     
     <div class="footer">
       <p>
-        website designed by <a class="email" href="mailto:r385chen@uwaterloo.ca">Rose Chen</a>
+        website designed by 
+        <a class="email" href="mailto:r385chen@uwaterloo.ca">Rose Chen</a>
       </p>
     </div>
   </body>
